@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <link href="./css/main.css" type="text/css" rel="stylesheet"/>
+      <style type="text/css">
+        label{
+          font-weight: bold;
+          
+        }
+        .tab1 {
+          border: 1px solid black;
+        }
+        .tab2{
+          border: 0px solid black;
+        }
+        </style>
+    </head>   
+    <body style="background-color:white ;">
+    <marquee><h1 style="color:black;font-family:italics"> CAB BOOKING SERVICE </h1></marquee>
+    <img src="taxiii.jpg" width="1300" height="400"/>
+    
+    <form action="cabbooking.html" method="post">
+        <center>
+        <h2 style="color:rgb(15, 15, 14)">LOGIN HERE</h2>
+       
+        <div class="login">
+            <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+    
+        <button type="submit">Login</button>
+        </div>
+            <h2 style="color:rgb(11, 11, 10)">CREATE NEW ACCOUNT</h2>
+        <table class="tab1" cellspacing="6" cellpadding="2">
+          <tr>
+            <td class="tab2">
+            <label for="title">Title</label> </td>
+            <td><select> id="title" name="title" multiple> 
+              <option value="1"> Mr.</option>
+              <option value="2" >Mrs.</option>
+              <option value="3"> Ms.</option>
+            </select>
+          </td>
+          </tr>
+        <tr>
+       <td> <label for="FirstName"></label>First Name:</td>
+       <td> <input type="text" id="FirstName"  placeholder="Your first name"></td>
+       </tr>
+       <tr>
+       <td> <label for="LastName"></label>Last Name: </td>
+       <td><input type="text" id="LastName" placeholder="Your last name"></td>
+      </tr>
+     <td>
+        <label for="gender">Gender:</label>   
+      </td>
+      <td>
+    <input type="radio"  id="male" name="gender" value="1"/> Male
+    <input type="radio"  id="female" name="gender" value="2"/> Female
+    </td>
+  </tr>
+  <tr>
+    <td> <label for="email"></label>Email address: </td>
+    <td><input type="text" id="email" placeholder="Your email address"></td>
+   </tr>
+   <tr>
+    <td> <label for="contact"></label>Contact number: </td>
+    <td><input type="text" id="contact" placeholder="Your contact number"></td>
+   </tr>
+  <td>
+    <label for="contact">Can we contact? </label>
+  </td>
+  <td>
+<input type="radio" id="yes" name="option" value="1"/> yes
+<input type="radio" id="no" name="option" value="1"/> No
+</td>
+<tr>
+  <td>
+    <label for="communication preference"></label>communication preference:
+  </td>
+  <td>
+    <input type="checkbox" id="checkbox"  value="1"> Email
+    <input type="checkbox" id="checkbox"  value="2"> SMS
+
+  </td>
+</tr>
+<tr>
+  <td>
+    <input type="checkbox" id="checkbox"/> I agree to the  <a href="tc.html">terms and condition</a> of the website
+  </td>
+  
+</tr>
+    <tr>
+      <td>
+        <input type="submit" onclick="javascript:saveData();" id="submit" />
+      </td>
+      <td>
+        <input type="reset" id="reset" name="reset" value="reset"/>
+      </td>
+    </tr>
+
+        </tr>
+      </table>
+    </form>
+</center>
+</body>
+</html>
