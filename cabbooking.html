@@ -1,38 +1,77 @@
 <html>
-    <head>
-        <title>Booking page</title>
-        <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-        <body>
-            <div class="mapouter">
-            <div class="gmap_canvas">
-            <iframe width="600" height="800" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <style>
-            .mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
-            <a href="https://www.embedgooglemap.net">adding a google map to your website</a>
-            <style>
-            .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1200px;}
-            </style>
-            </div>
-        </div>
-        <form>
-            <fieldset disabled>
-              <legend>Choose your trip location</legend>
-              <div class="mb-3">
-                <label for="pickup" class="form-label">Pickup</label>
-                <input type="text" id="pickup" class="form-control" placeholder="pickup location">
-              </div>
-              <div class="mb-3">
-                <label for="dropoff" class="form-label">dropoff</label>
-                <input type="text" id="dropoff" class="form-control" placeholder="dropoff location">
-              </div>
-                  </label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
-          </form>
-        
-        </body>
-   
+
+<head>
+  <title>Booking page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="login.html" style="color:white">🌍MyCabs</a>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="signup.html" style="color:white">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tc.html" style="color:white">About Us</a>
+          </li>
+
+  </nav>
+
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe width="600" height="800" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <style>
+        .location {
+          justify-content: center;
+          margin-top: 20px;
+          font-size: 20px;
+        }
+
+        #btn {
+          margin-top: 20px;
+          margin-left: 400px;
+        }
+
+        .mapouter {
+          position: relative;
+          text-align: right;
+          height: 500px;
+          width: 600px;
+        }
+      </style>
+      <a href="https://www.embedgooglemap.net">adding a google map to your website</a>
+      <style>
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 500px;
+          width: 1200px;
+        }
+      </style>
+    </div>
+  </div>
+  <form class="form-control" id="form">
+    <div class="location">
+      <div>
+        <label for="pickup" class="form-label">Pickup</label>
+        <input type="text" id="pickup" class="form-control" placeholder="pickup location" />
+      </div>
+      <div>
+        <label for="dropoff" class="form-label">dropoff</label>
+        <input type="text" id="dropoff" class="form-control" placeholder="dropoff location" />
+      </div>
+      <div class="col-md-4 offset-md-4" id="btn">
+        <button type="submit" class="btn btn-primary" style="width: 400px;"> Go </button>
+      </div>
+    </div>
+  </form>
+
+</body>
+
 </html>

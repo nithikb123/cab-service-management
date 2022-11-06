@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body{
+        background-image: url(a.jgp.webp);
+        background-repeat: no-repeat; 
+    }
+    .cont{
+        background-color:rgba(247, 179, 33, 0.9);
+        border-radius:0.1in;
+        
+    }
+    
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="login.html" style="color:white">🌍MyCabs</a>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="signup.html" style="color:white">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tc.html" style="color:white">About Us</a>
+                    </li>
+                    
+    </nav>
+    
+    <form  action="cabbooking.html" style="padding-left:850px ;">
+        <h2 style="color:rgb(11, 11, 10);margin-top: 10px;">Sign-Up</h2>
+        <div class="cont">
+        <table class="tab1" cellspacing="5" cellpadding="2">
+          <tr>
+            <td class="tab2">
+            <label for="title">Title</label> </td>
+            <td><select> id="title" name="title" multiple> 
+              <option value="1"> Mr.</option>
+              <option value="2" >Mrs.</option>
+              <option value="3"> Ms.</option>
+            </select>
+          </td>
+          </tr>
+        <tr>
+       <td> <label for="FirstName"></label>First Name:</td>
+       <td> <input type="text" id="FirstName"  placeholder="Your first name"></td>
+       </tr>
+       <tr>
+       <td> <label for="LastName"></label>Last Name: </td>
+       <td><input type="text" id="LastName" placeholder="Your last name"></td>
+      </tr>
+      <tr>
+        <td> <label for="uname"></label>Username: </td>
+        <td><input type="text" id="uname" placeholder="Your Username"></td>
+       </tr>
+       <tr>
+        <td> <label for="psw"></label>Password: </td>
+        <td><input type="password" id="psw" placeholder="Enter you password"></td>
+       </tr>
+       <tr>
+        <td> <label for="cpsw"></label>Confirm Password: </td>
+        <td><input type="text" id="cpsw" placeholder="Confirm Password"></td>
+       </tr>
+     <td>
+        <label for="gender">Gender:</label>   
+      </td>
+      <td>
+    <input type="radio"  id="male" name="gender" value="1"/> Male
+    <input type="radio"  id="female" name="gender" value="2"/> Female
+    </td>
+    </tr>
+    <tr>
+    <td> <label for="email"></label>Email address: </td>
+    <td><input type="email" id="mail" placeholder="Your email address"></td>
+    </tr>
+    <tr>
+    <td> <label for="contact"></label>Contact number: </td>
+    <td><input type="text" id="contact" placeholder="Your contact number"></td>
+    </tr>
+    <td>
+    <label for="contact">Can we contact? </label>
+    </td>
+    <td>
+    <input type="radio" id="yes" name="option" value="1"/> yes
+    <input type="radio" id="no" name="option" value="1"/> No
+    </td>
+    <tr>
+    <td>
+    <label for="communication preference"></label>communication preference:
+    </td>
+    <td>
+    <input type="checkbox" id="checkbox"  value="1"> Email
+    <input type="checkbox" id="checkbox"  value="2"> SMS
+    
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <input type="checkbox" id="checkbox"/> I agree to the<a href="tc.html">terms and condition</a> of the website</td>
+    </tr>
+    <tr>
+      <td>
+        <input style="margin-left:50px ;" type="submit" onClick="saveData();" id="submit" />
+      </td>
+      <td>
+        <input style="margin-left:50px ;" type="reset" id="reset" name="reset" value="reset"/>
+      </td>
+    </tr>
+    
+        </tr>
+      </table>
+    </div>
+    </form>
+</body>
+</html>
